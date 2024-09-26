@@ -1,0 +1,59 @@
+<!--Nav bar-->
+{% load static %}
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Italianno&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link rel="stylesheet" href="{%static "style.css"%}" >
+<nav>
+    <ul>
+        <h3>Sophias</h3>
+        <li>New Arrivals</li>
+        <li>Sale</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+        <li>Accessories</li>
+        <li>Footware</li>
+    </ul>
+    <form>
+    <div class = "content">
+            <input type="text" name="q" placeholder="Search a product" value="{{ query }}"></input>
+            <button type="submit"><box-icon name='search'></box-icon></button>
+            <span><box-icon name='cart'></box-icon></span>
+            </div>
+        </form>
+</nav>
+    </head><!--  --> 
+
+<body>
+{% block content %}
+
+{% endblock content %}
+</body>
+        <!--Footer-->
+<footer>
+    <div class="footer">
+<section class="about_logo">
+    <h3>Sophias</h3>
+    <p>Your prefered boutique</P>
+
+        
+        <input type="text" placeholder="Subscribe to be on the track"></input>
+        <button type="submit">Subscribe</button>
+        
+
+</section>
+<section>
+    <section class="subscribe_socials">
+<ul>
+            <li><a href="tel:+254793525583"><box-icon name='phone'></box-icon></a> </li>
+            <li> <a href="mailto:geoffreyowuor71@gmail.com"><box-icon name='envelope' ></box-icon></a></li>
+            <li><a href="#"><box-icon name='instagram' type='logo' ></box-icon> </a></li>
+            <li><a href="#"><box-icon type='logo' name='twitter'></box-icon></a>  </li> 
+            <li><a href="#"><box-icon name='facebook' type='logo' ></box-icon></a>  </li>
+
+        </ul>
+    </section>
+</div>
+</footer>

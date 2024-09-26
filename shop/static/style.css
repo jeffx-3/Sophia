@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*{
+    margin: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: rgb(44, 245, 252);
+    padding: 15px;
+    justify-content: space-around;
+    margin: 0;
+    position: fixed;
+    overflow: visible;
+}
+nav ul h3{
+    margin-left: 1px;
+
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav .content{
+    display: flex;
+    margin-right: 20px;
+}
+nav .content input{
+    border-radius: 15px;
+    padding: 7.5px;
+    border-style: none;
+}
+nav .content button{
+    background: none;
+    border-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    size: 12px;
+}
+nav .content span{
+    size: 12px;
+}
+/*Hero-section styling*/
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63vh;
+    background: url(images/tamara-bellis-QNCpA4csmcw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+
+
+}
+.hero-section .content{
+    position: left;
+    width: 85%;
+}
+.hero-section .content p,h2{
+    line-height: 1;
+    letter-spacing: 0.5;
+}
+
+.hero-section .content p{
+    font-size: 20px;
+    font-weight: 50;
+}
+.hero-section .content h2{
+    font-family: Italianno;
+    font-size: 65px;
+    font-weight: 300;
+    
+}
+
+
+
+/*footer styling section*/
+.footer{
+    display: flex;
+    position: sticky;
+    background: rgb(44, 245, 252, 0.5);
+    width: 100%;
+    padding: 20px;
+    overflow: show;
+}
+.footer .about_logo p,
+h3{
+    line-height: 1.5;
+    letter-spacing: 0.5;
+    margin-left: 10px;
+
+
+}
+.footer .about_logo input{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 14px;
+
+
+}
+.footer .about_logo button{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 10px;
+    background: rgb(22, 19, 19);
+    color: white;
+    
+    
+
+}
+.footer .subscribe_socials ul{
+    display: flex;
+    gap: 2rem;
+
+}
+.footer .subscribe_socials ul li{
+    list-style: none;
+    
+
+}

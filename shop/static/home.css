@@ -1,0 +1,7 @@
+/*Hero-section styling*/
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg);
+}
