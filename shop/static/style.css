@@ -47,7 +47,7 @@ nav .content span{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 63vh;
+    height: 100vh;
     background: url(images/tamara-bellis-QNCpA4csmcw-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -76,53 +76,37 @@ nav .content span{
     font-weight: 300;
     
 }
-
-/*testimonials styling*/
-.title h3{
-    text-align: center;
-    margin-top: 10pxS;
-}
-.testimonials{
-    display: flex;
-    justify-content: space-evenly;
+.hero-section .content button{
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-radius: 15px;
+    padding: 15px;
     margin-top: 10px;
-    height: 37vh;
-    padding: 20px;
-    background: rgb(44, 245, 252,0.3);
-    border-radius: 10px;
-    margin: 20px;
+    background: rgb(44, 245, 252,0.5);
+    cursor: pointer;
+
 }
-.testimonials h3{
-    text-align: center;
-    
+.hero-section .content .arrow{
+    margin-left: 5px;
+}
+.hero-section .content button:hover{
+    background: rgb(44, 245, 252);
 }
 
-.testimonials .customer img{
-    height: 60px;
-    width: 60px;
-    border-radius: 60px;
-}
-
-.testimonials .customer h4{
-    text-align: center;
-}
-.testimonials .customer p{
-    line-height: 1.5;
-    letter-spacing: 0.5;
-    width: 90%;
-}
 
 /*footer styling section*/
 .footer{
-    display: flex;
-    position: absolute;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-content: space-between;
     background: rgb(44, 245, 252, 0.5);
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
     overflow: show;
-    margin-top: 0;
+    bottom: 0;
 }
 .footer .about_logo p,
 h3,
@@ -133,8 +117,17 @@ h4{
 
 
 }
+
+.footer .about_logo p{
+    max-width: 70%;
+
+
+}
 .footer .about_logo .quick_links h4{
     text-align: center;
+}
+.footer .about_logo .quick_links{
+    align-items: center;
 }
 .footer .about_logo input{
     margin-top: 10px;

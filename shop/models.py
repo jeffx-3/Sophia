@@ -15,6 +15,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/')
     stock = models.PositiveIntegerField(default=0)
     available = models.BooleanField(default=True)
+    
 
     def __str__(self):
         return self.name
