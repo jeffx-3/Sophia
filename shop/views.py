@@ -12,3 +12,7 @@ def discover(request):
         'products': products
     }
     return render(request, 'discover.html',context)
+
+#cart views
+def cart(request):
+    return render(request, 'cart.html')
