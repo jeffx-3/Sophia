@@ -5,7 +5,7 @@
 nav{
     display: flex;
     width: 100%;
-    background: rgb(44, 245, 252);
+    background:rgb(44, 245, 252);
     padding: 15px;
     justify-content: space-around;
     margin: 0;
@@ -41,6 +41,7 @@ nav .content button{
 }
 nav .content span{
     size: 12px;
+    
 }
 /*Hero-section styling*/
 .hero-section{
@@ -48,7 +49,7 @@ nav .content span{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url(images/tamara-bellis-QNCpA4csmcw-unsplash.jpg);
+    background: url(images/apostolos-vamvouras-IcKwz2E4xp8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@ nav .content span{
 .hero-section .content h2{
     font-family: Italianno;
     font-size: 65px;
-    font-weight: 300;
+    font-weight: 450;
     
 }
 .hero-section .content button{
@@ -95,7 +96,22 @@ nav .content span{
     background: rgb(44, 245, 252);
 }
 
+.product_detail img{
+    width: 20%;
 
+}
+
+/*Products styling*/
+.products{
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.products img{
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+}
 /*footer styling section*/
 .footer{
     display: grid;
