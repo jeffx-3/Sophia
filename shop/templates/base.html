@@ -1,5 +1,6 @@
 <!--Nav bar-->
 {% load static %}
+<header>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Italianno&display=swap" rel="stylesheet">
@@ -7,7 +8,7 @@
 <link rel="stylesheet" href="{%static "style.css"%}" >
 <nav>
     <ul>
-        <h3>ClassyFooty</h3>
+        <h3>Sophias</h3>
         <li>New Arrivals</li>
         <li>Sale</li>
         <li>Men</li>
@@ -22,7 +23,8 @@
             </div>
         </form>
 </nav>
-    </head><!--  --> 
+    </head>
+</header><!--  --> 
 
 <body>
 
@@ -34,10 +36,11 @@
 
 
         <!--Footer-->
+        {% block footer %}
 <footer>
     <div class="footer">
 <section class="about_logo">
-    <h3>ClassyFooty</h3>
+    <h3>Sophias</h3>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
         nisi ut aliquip ex ea commodo consequat.</P>
@@ -83,3 +86,4 @@
     </section>
 </div>
 </footer>
+{% endblock footer %}
