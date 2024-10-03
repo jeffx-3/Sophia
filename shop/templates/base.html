@@ -15,7 +15,8 @@
         <li>Women</li>
         <li>Kids</li>
     </ul>
-    <form>
+    
+<form method="GET" action="{% url 'search' %}">
     <div class = "content">
             <input type="text" name="q" placeholder="Search a product" value="{{ query }}"></input>
             <button type="submit"><box-icon name='search'></box-icon></button>

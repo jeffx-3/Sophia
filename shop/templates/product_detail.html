@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="product-detail">
-    <h1>{{ product.name }}</h1>
+  <div class="product_detail">
     <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    <div class="details">
+    <h1>{{ product.name }}</h1>
     <p>{{ product.description }}</p>
-    <p>Price: ${{ product.price }}</p>
-    <p>Stock: {{ product.stock }}</p>
-    <p><a href="{% url 'add_to_cart' product.id %}">Add to Cart</a></p>
-    <p><a href="{% url 'product_list' %}">Back to products</a></p>
+    <p>Price: <strong> ${{ product.price }}</strong></p>
+    <p>Stock:<strong>{{ product.stock }}</strong></p>
+    <a href="{% url 'add_to_cart' product.id %}"><button>Add to Cart</button></a>
+   <a href="{% url 'product_list' %}"> <button>Back to products</button></a>
+
   </div>
 {% endblock %}
 {% block footer %}{% endblock footer %}

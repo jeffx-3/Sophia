@@ -139,11 +139,41 @@ p{
     line-height: 1.5;
     letter-spacing: 0.5;
 }
+/*Product detail styling*/
 .product_detail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  
     
+}
+.product_detail img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product_detail p,
+h1{
+    line-height: 1.5;
+    letter-spacing: 0.5;
+  
+}
+
+.product_detail p{
+    width: 70%;
+  
+}
+.product_detail button{
+    border-style: none;
+    border-radius: 15px;
+    padding: 15px;
+    background:  rgb(44, 245, 252);
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  
 }
 /*footer styling section*/
 .footer{

@@ -14,6 +14,21 @@ def discover(request):
     }
     return render(request, 'discover.html',context)
 
+#search view
+def search(request):
+    query = request.GET.get('q', '') # Get the search term from the query parameters
+    if query:
+        results = Product.objects.filter(name__icontains=query)
+    else:
+        results = Product.objects.none() # No search results if no query
+        
+    context = {
+        'results': results,
+        'query': query,
+    }
+    return render(request, 'product_search.html', context)
+
+
 #cart views
 def cart(request):
     return render(request, 'cart.html')

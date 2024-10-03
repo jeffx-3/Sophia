@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if query %}
+        <p>Results for: "{{ query }}"</p>
+        <p>Found {{results.count}} product(s)</p>
+        {% if results %}
+            <ul>
+                {% for Product in Products%}
+                <div class="products">
+                        <div class="item">
+                       <a href="{% url 'product_detail' product.id %}"><img src="{{product.image.url}}"  alt="{{ product.name }}"></a>
+                      <h2>{{ product.name }}</h2>
+                      <p>${{ product.price }}</p>
+                     <button> <a href="{% url 'add_to_cart' product.id %}">Add to Cart</a></buttotn>
+                    
+                </div>
+        
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No product found</p>
+        {% endif %}
+    {% else %}
+        <p>Please enter a search term.</p>
+    {% endif %}
+{% endblock %}
+{% block footer %}
+{% endblock footer %}
